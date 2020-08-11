@@ -4,12 +4,22 @@ import ReactDOM from 'react-dom';
 
 //Create a react component
 const App =  function(){
-    const buttonText = {text: 'Hi there!'}
   return (
-        <div>
-            <label className="label" htmlFor="name">Enter name:</label>
-            <input id="name" type="text"/>
-  <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText.text}</button>
+        <div className="ui container comments">
+            <div className="comment">
+                <a href="/" className="avatar">
+                    <img alt="avatar"/>
+                </a>
+                <div className="content">
+                    <a href="/" className="author">
+                        Sam
+                    </a>
+                    <div className="metadata">
+                        <span className="date">today at 6:00PM</span>
+                     </div>
+                    <div className="text">Nice blog post!</div>
+                </div>
+            </div>
         </div>
   );
 };
